@@ -18,6 +18,7 @@ export const initCanvas = () => {
 
   canvas.width = window.innerWidth - 4;
   canvas.height = window.innerHeight - 4;
+  canvas.id = 'mandala-canvas';
   canvas.role = 'presentation';
   canvas.ariaLabel = 'mandala';
 

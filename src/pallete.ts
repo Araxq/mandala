@@ -26,10 +26,8 @@ export const getColors = (n: number) => {
 
 export const addStopsToGradient = (gradient: CanvasGradient) => {
   const colors = getColors(getRandomInt(2, 5));
-  console.log(colors);
   // TODO add random step sizes
   const step = 1 / (colors.length - 1);
-  console.log(step);
   colors.forEach((c, ind) => {
     gradient.addColorStop(ind * step, c);
   });
